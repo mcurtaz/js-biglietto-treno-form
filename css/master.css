@@ -17,6 +17,9 @@ h1{
   text-align: center;
 }
 
+/* sezione form */
+
+
 .form{
   padding: 20px 0;
   display: flex;
@@ -56,4 +59,38 @@ h1{
   padding: 6px;
   margin-top: 20px;
   font-size: 15px;
+}
+
+/* sezione biglietto */
+
+.biglietto{
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.biglietto .blocco{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.biglietto .blocco:first-child{
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.biglietto .blocco div:first-child{
+  width: 30%;
+  padding: 10px;
+}
+
+.biglietto .blocco div:first-child img{
+  width: 70%;
+}
+
+.biglietto .blocco div:last-child{
+  width: 30%;
 }

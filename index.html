@@ -9,7 +9,7 @@
   <body>
     <div class="container">
       <h1>Biglietteria Online Trenitalia</h1>
-      <div class="form">
+      <section class="form">
         <div class="form-input">
           <label for="nome">Nome</label>
           <input id="nome" type="text" name="nome" value="">
@@ -31,7 +31,38 @@
           </select>
         </div>
         <button id="btnCrea" type="button" name="button">Crea Biglietto</button>
-      </div>
+      </section>
+      <section class="biglietto">
+        <div class="blocco">
+          <div>
+            <img src="img/logo.png" alt="logo">
+          </div>
+          <div>
+            <span>Intestatario: <span id="nomeCompleto"></span></span>
+          </div>
+        </div>
+        <div class="blocco">
+          <div>
+            <span>Numero treno: </span>
+            <span id="numeroTreno"></span>
+          </div>
+          <div>
+            <span>Numero carrozza: </span>
+            <span id="numeroCarrozza"></span>
+          </div>
+        </div>
+        <div class="blocco">
+          <div>
+            <span>Riduzione: </span>
+            <span id="riduzione"></span>
+          </div>
+          <div>
+            <span>Prezzo Biglietto: </span>
+            <span id="prezzoBiglietto"></span>
+          </div>
+        </div>
+      </section>
+      <button id="btnAnnulla" type="button" name="annulla">Annulla</button>
     </div>
     <script type="text/javascript" src="js/script.js"></script>
   </body>
