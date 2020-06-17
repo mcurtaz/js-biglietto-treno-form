@@ -16,7 +16,7 @@ document.getElementById("btnCrea").addEventListener("click", function(){
 
   console.log(km);
 
-  var riduzione = document.getElementById("riduzione").value;
+  var riduzione = document.getElementById("sconto").value;
 
   console.log(riduzione);
 
@@ -33,5 +33,23 @@ document.getElementById("btnCrea").addEventListener("click", function(){
   }
 
   console.log(prezzoBiglietto);
+
+  // creo variabili numero treno (tra 90000 e 99999)  e numero numeroCarrozza (tra 1 e 12)
+
+  var numeroTreno = Math.floor(Math.random() * (99999 - 90000 + 1) + 90000);
+
+  var numeroCarrozza = Math.floor(Math.random() * (12 - 1 + 1) + 1);
+
+  // stampo Biglietto
+
+  document.getElementById("nomeCompleto").innerHTML = nomeCompleto;
+
+  document.getElementById("numeroTreno").innerHTML = numeroTreno;
+
+  document.getElementById("numeroCarrozza").innerHTML = numeroCarrozza;
+
+  document.getElementById("riduzione").innerHTML = riduzione;
+
+  document.getElementById("prezzoBiglietto").innerHTML = prezzoBiglietto.toFixed(2);
 
 });
