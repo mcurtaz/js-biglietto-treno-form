@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/master.css">
+    <title>Trenitalia | Biglietteria</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Biglietteria Online Trenitalia</h1>
+      <h3>Attenzione: dal <span id="oggi"></span> la tariffa trenitalia per i biglietti kilometrici è di <span id="costoKm"></span> euro al kilometro.</h3>
+      <section class="form">
+        <div class="form-input">
+          <label for="nome">Nome</label>
+          <input id="nome" type="text" name="nome" value="">
+        </div>
+        <div class="form-input">
+          <label for="cognome">Cognome</label>
+          <input id="cognome" type="text" name="cognome" value="">
+        </div>
+        <div class="form-input">
+          <label for="km">Quanti km desideri percorrere?</label>
+          <input id="km" type="number" name="km" value="">
+        </div>
+        <div class="form-input">
+          <label for="sconto">Seleziona eventuali riduzioni</label>
+          <select id="sconto" name="sconto">
+            <option value="nessuna" selected>Nessuna riduzione</option>
+            <option value="minori">Minori &lt;18</option>
+            <option value="senior">Senior &gt;65</option>
+          </select>
+        </div>
+        <button id="btnCrea" type="button" name="button">Crea Biglietto</button>
+      </section>
+      <section class="biglietto">
+        <div class="blocco">
+          <div>
+            <img src="img/logo.png" alt="logo">
+          </div>
+          <div>
+            <span>Intestatario: </span>
+            <span id="nomeCompleto" class="hidden"></span>
+          </div>
+        </div>
+        <div class="blocco">
+          <div>
+            <span>Numero treno: </span>
+            <span id="numeroTreno" class="hidden"></span>
+          </div>
+          <div>
+            <span>Numero carrozza: </span>
+            <span id="numeroCarrozza" class="hidden"></span>
+          </div>
+        </div>
+        <div class="blocco">
+          <div>
+            <span>Riduzione: </span>
+            <span id="riduzione" class="hidden"></span>
+          </div>
+          <div>
+            <span>Prezzo Biglietto: </span>
+            <span id="prezzoBiglietto" class="hidden"></span>
+          </div>
+        </div>
+      </section>
+      <div>
+        <button id="btnAnnulla" type="button" name="annulla">Annulla</button>
+        <button id="btnStampa" type="button" name="button">Stampa Biglietto</button>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>

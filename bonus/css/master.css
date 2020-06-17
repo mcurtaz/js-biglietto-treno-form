@@ -1,0 +1,147 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #ab1c34;
+  color: #fff;
+}
+
+.container{
+  padding: 20px 15% 20px;
+}
+
+h1{
+  text-align: center;
+}
+
+h3{
+  text-align: center;
+  font-weight: normal;
+  margin: 15px 0;
+}
+
+/* sezione form */
+
+
+.form{
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.form .form-input{
+  width: 50%;
+  padding: 10px;
+}
+
+.form-input [type="text"]{
+  width: 100%;
+  margin-top: 5px;
+}
+
+.form-input [type="number"]{
+  width: 60px;
+  margin-top: 5px;
+}
+
+.form-input input{
+  height: 25px;
+  line-height: 25px;
+}
+
+.form-input label{
+  margin-right: 5px;
+  font-size: 17px;
+}
+
+.form-input option, .form-input select{
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+#btnCrea, #btnAnnulla, #btnStampa{
+  padding: 6px;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+/* sezione biglietto */
+
+.biglietto{
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.biglietto .blocco{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.biglietto .blocco:first-child{
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.biglietto .blocco div:first-child{
+  width: 30%;
+  padding: 10px;
+}
+
+.biglietto .blocco div:first-child img{
+  width: 70%;
+}
+
+.biglietto .blocco div:last-child{
+  width: 30%;
+}
+
+.biglietto .blocco div span:first-child{
+  font-weight: bold;
+}
+
+.biglietto .blocco div span:last-child{
+  text-transform: capitalize;
+}
+
+  /* classi transizione */
+
+.hidden{
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.show{
+  opacity: 1;
+  transition: 0.8s;
+}
+
+
+/* bottone annulla */
+
+.container>div:last-child{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+@media screen and (max-width: 700px) {
+  .container{
+    padding: 10px 0;
+  }
+
+  .biglietto .blocco div:first-child, .biglietto .blocco div:last-child{
+    width: 50%;
+  }
+
+  .biglietto .blocco div:first-child img{
+    width: 60%;
+  }
+}
