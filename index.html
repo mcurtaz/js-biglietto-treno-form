@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/master.css">
+    <title>Trenitalia | Biglietteria</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Biglietteria Online Trenitalia</h1>
+      <div class="form">
+        <div class="form-input">
+          <label for="nome">Nome</label>
+          <input type="text" name="nome" value="">
+        </div>
+        <div class="form-input">
+          <label for="cognome">Cognome</label>
+          <input type="text" name="cognome" value="">
+        </div>
+        <div class="form-input">
+          <label for="km">Quanti km desideri percorrere?</label>
+          <input type="number" name="km" value="">
+        </div>
+        <div class="form-input">
+          <label for="riduzioni">Seleziona eventuali riduzioni</label>
+          <select  name="riduzioni">
+            <option value="nessuna" selected>Nessuna riduzione</option>
+            <option value="minori">Minori &lt;18</option>
+            <option value="minorenne">Senior &gt;65</option>
+          </select>
+        </div>
+        <button id="btnCrea" type="button" name="button">Crea Biglietto</button>
+      </div>
+    </div>
+  </body>
+</html>
