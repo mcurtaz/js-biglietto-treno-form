@@ -52,4 +52,53 @@ document.getElementById("btnCrea").addEventListener("click", function(){
 
   document.getElementById("prezzoBiglietto").innerHTML = prezzoBiglietto.toFixed(2);
 
+// applico classe show per effetto transizione sull'opacità
+
+  document.getElementById("nomeCompleto").className = "show";
+
+  document.getElementById("numeroTreno").className = "show";
+
+  document.getElementById("numeroCarrozza").className = "show";
+
+  document.getElementById("riduzione").className = "show";
+
+  document.getElementById("prezzoBiglietto").className = "show";
+});
+
+
+// istruzione su click su bottone Annulla
+
+document.getElementById("btnAnnulla").addEventListener("click", function(){
+
+  // al biglietto tolgo classe show e metto classe hidden
+
+  document.getElementById("nomeCompleto").classList.remove("show");
+
+  document.getElementById("numeroTreno").classList.remove("show");
+
+  document.getElementById("numeroCarrozza").classList.remove("show");
+
+  document.getElementById("riduzione").classList.remove("show");
+
+  document.getElementById("prezzoBiglietto").classList.remove("show");
+
+  document.getElementById("nomeCompleto").classList.add("hidden");
+
+  document.getElementById("numeroTreno").classList.add("hidden");
+
+  document.getElementById("numeroCarrozza").classList.add("hidden");
+
+  document.getElementById("riduzione").classList.add("hidden");
+
+  document.getElementById("prezzoBiglietto").classList.add("hidden");
+
+  // svuoto il form
+
+  document.getElementById("nome").value = "";
+
+  document.getElementById("cognome").value = "";
+
+  document.getElementById("km").value = "";
+
+  document.getElementById("sconto").value = "nessuna";
 });

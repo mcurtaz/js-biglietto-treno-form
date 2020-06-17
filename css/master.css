@@ -55,7 +55,7 @@ h1{
   font-size: 15px;
 }
 
-#btnCrea{
+#btnCrea, #btnAnnulla{
   padding: 6px;
   margin-top: 20px;
   font-size: 15px;
@@ -93,4 +93,31 @@ h1{
 
 .biglietto .blocco div:last-child{
   width: 30%;
+}
+
+.biglietto .blocco div span:first-child{
+  font-weight: bold;
+}
+
+.biglietto .blocco div span:last-child{
+  text-transform: capitalize;
+}
+
+  /* classi transizione */
+
+.hidden{
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.show{
+  opacity: 1;
+  transition: 0.8s;
+}
+
+
+/* bottone annulla */
+
+.container>div:last-child{
+  text-align: center;
 }
